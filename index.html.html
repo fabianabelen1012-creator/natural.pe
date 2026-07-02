@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural.pe | Pure Peruvian Superfood in Singapore</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display (Serif) & Inter (Sans-serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            primary: '#1E1B4B',   // Deep Blueberry / Night Blue
+                            secondary: '#15803D', // Organic Sage / Leaf Green
+                            secondaryHover: '#166534',
+                            bg: '#FDFBF7',        // Light Kraft / Sand
+                            text: '#1C1917',      // Charcoal Black
+                            accent: '#E2D9C8'     // Warm Kraft border
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Sutil textura kraft de fondo */
+        .bg-kraft-texture {
+            background-color: #FDFBF7;
+            background-image: radial-gradient(rgba(28, 25, 23, 0.03) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+        /* Transiciones suaves para elementos interactivos */
+        .transition-all-300 {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+<body class="bg-kraft-texture text-brand-text font-sans selection:bg-brand-secondary selection:text-white overflow-x-hidden">
+
+    <!-- Header / Navegación -->
+    <header class="sticky top-0 z-50 bg-brand-bg/90 backdrop-blur-md border-b border-brand-accent/30 py-4 px-6 md:px-12 transition-all-300">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <a href="#" class="font-serif text-2xl font-bold text-brand-primary tracking-tight">
+                natural<span class="text-brand-secondary">.pe</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold tracking-wider uppercase">
+                <a href="#benefits" class="hover:text-brand-secondary transition-colors">Benefits</a>
+                <a href="#certifications" class="hover:text-brand-secondary transition-colors">Certifications</a>
+                <a href="#journey" class="hover:text-brand-secondary transition-colors">The Journey</a>
+                <a href="#portal" class="hover:text-brand-secondary transition-colors">B2B / Wholesale</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <a href="#portal" class="bg-brand-secondary hover:bg-brand-secondaryHover text-white text-xs font-bold tracking-wider uppercase px-5 py-2.5 rounded transition-colors duration-200">
+                    Get Free Sample
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[90vh] flex items-center px-6 md:px-12 py-12 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
+            
+            <!-- Texto del Hero -->
+            <div class="lg:col-span-7 space-y-6 text-left">
+                <div class="inline-flex items-center space-x-2 bg-brand-secondary/10 text-brand-secondary px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase">
+                    <span>🇸🇬 Designed for Singapore's CBD & Wellness</span>
+                </div>
+                
+                <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl text-brand-primary leading-[1.15] font-semibold">
+                    Pure Peruvian Superfood. <br>
+                    <span class="text-brand-secondary italic">0% Sugar Added.</span> <br>
+                    Hit your Nutri-Grade A goals.
+                </h1>
+                
+                <p class="text-base sm:text-lg text-brand-text/80 max-w-xl leading-relaxed">
+                    Sustainably grown in high-altitude Andean valleys and gently dehydrated. Packed with natural antioxidants to fuel busy professionals in Singapore’s fast-paced environment.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
+                    <a href="#portal" class="bg-brand-secondary hover:bg-brand-secondaryHover text-white font-bold tracking-wider uppercase px-8 py-4 rounded text-center transition-all duration-200 shadow-md hover:shadow-lg">
+                        B2B Inquiry / Wholesale
+                    </a>
+                    <a href="#journey" class="border border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white font-bold tracking-wider uppercase px-8 py-4 rounded text-center transition-all duration-200">
+                        Explore Our Journey
+                    </a>
+                </div>
+
+                <!-- Enlace rápido a políticas de sostenibilidad -->
+                <p class="text-xs text-brand-text/60 italic flex items-center gap-2">
+                    🌳 Fully compliant with Singapore Green Plan 2030 packaging goals.
+                </p>
+            </div>
+
+            <!-- Visual del Hero (Simulación de Mockup y Estilo) -->
+            <div class="lg:col-span-5 relative flex justify-center">
+                <div class="relative w-full max-w-md aspect-square bg-gradient-to-tr from-brand-primary/5 to-brand-secondary/5 rounded-3xl border border-brand-accent p-6 flex flex-col justify-between overflow-hidden shadow-sm">
+                    <!-- Decoraciones abstractas -->
+                    <div class="absolute top-4 right-4 text-brand-secondary/10 font-serif text-8xl font-bold select-none pointer-events-none">A</div>
+                    
+                    <!-- Imagen destacada (Placeholder estético de alta calidad) -->
+                    <div class="w-full h-[65%] rounded-2xl overflow-hidden bg-brand-accent/20 relative group">
+                        <img src="https://images.unsplash.com/photo-1599599810769-bcde5a160d32?auto=format&fit=crop&w=800&q=80" 
+                             alt="Premium Dried Blueberries" 
+                             class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700">
+                    </div>
+
+                    <!-- Datos rápidos de empaque -->
+                    <div class="pt-4 flex justify-between items-end border-t border-brand-accent/40">
+                        <div>
+                            <p class="text-xs uppercase tracking-wider text-brand-text/60 font-semibold">Packaging Type</p>
+                            <h4 class="font-serif text-lg text-brand-primary font-bold">Biodegradable Kraft Doypack</h4>
+                        </div>
+                        <span class="bg-brand-primary text-white text-[10px] font-bold tracking-widest uppercase px-2.5 py-1 rounded">
+                            Organic
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Sección de Transparencia y Certificaciones -->
+    <section id="certifications" class="bg-brand-accent/10 border-y border-brand-accent/40 py-16 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="font-serif text-3xl md:text-4xl text-brand-primary font-semibold mb-3">Clean. Traceable. Certified.</h2>
+                <p class="text-sm md:text-base text-brand-text/70">
+                    Meeting Singapore’s rigorous health and sustainability standards with complete transparency.
+                </p>
+            </div>
+
+            <!-- Grilla de Certificaciones -->
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+                
+                <!-- Nutri-Grade A Badge -->
+                <div class="bg-brand-bg border border-brand-accent/50 rounded-2xl p-6 text-center shadow-sm hover:shadow-md transition-all-300 flex flex-col items-center justify-center">
+                    <div class="w-16 h-16 rounded-full bg-emerald-100 flex items-center justify-center mb-4 border-2 border-emerald-500">
+                        <span class="text-2xl font-bold text-emerald-700 font-sans">A</span>
+                    </div>
+                    <h3 class="font-semibold text-brand-primary text-sm tracking-wide uppercase">Nutri-Grade A</h3>
+                    <p class="text-xs text-brand-text/60 mt-2">Certified Grade A. Absolutely zero added sugars or synthetic sweeteners.</p>
+                </div>
+
+                <!-- USDA Organic -->
+                <div class="bg-brand-bg border border-brand-accent/50 rounded-2xl p-6 text-center shadow-sm hover:shadow-md transition-all-300 flex flex-col items-center justify-center">
+                    <div class="w-16 h-16 rounded-full bg-brand-bg border border-brand-accent flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-brand-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M14 12a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <h3 class="font-semibold text-brand-primary text-sm tracking-wide uppercase">USDA Organic</h3>
+                    <p class="text-xs text-brand-text/60 mt-2">Grown with natural methods in certified organic soils in Peru.</p>
+                </div>
+
+                <!-- Halal Certified -->
+                <div class="bg-brand-bg border border-brand-accent/50 rounded-2xl p-6 text-center shadow-sm hover:shadow-md transition-all-300 flex flex-col items-center justify-center">
+                    <div class="w-16 h-16 rounded-full bg-brand-bg border border-brand-accent flex items-center justify-center mb-4">
+                        <span class="font-serif text-lg font-bold text-brand-secondary">حلال</span>
+                    </div>
+                    <h3 class="font-semibold text-brand-primary text-sm tracking-wide uppercase">Halal Certified</h3>
+                    <p class="text-xs text-brand-text/60 mt-2">Complies fully with dietary standards for Singapore's diverse consumers.</p>
+                </div>
+
+                <!-- Fair Trade -->
+                <div class="bg-brand-bg border border-brand-accent/50 rounded-2xl p-6 text-center shadow-sm hover:shadow-md transition-all-300 flex flex-col items-center justify-center">
+                    <div class="w-16 h-16 rounded-full bg-brand-bg border border-brand-accent flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-brand-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <h3 class="font-semibold text-brand-primary text-sm tracking-wide uppercase">Fair Trade</h3>
+                    <p class="text-xs text-brand-text/60 mt-2">Ethical partnerships ensuring fair compensation for smallholder Andean farmers.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección "The Journey" (Infografía Interactiva/Timeline) -->
+    <section id="journey" class="py-24 px-6 md:px-12 max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="font-serif text-3xl md:text-5xl text-brand-primary font-semibold mb-4">The Journey</h2>
+            <p class="text-base text-brand-text/70">
+                Trace our strictly monitored logistics chain keeping nature’s perfection intact from the Andes to Singapore's Cold Storage supermarkets.
+            </p>
+        </div>
+
+        <!-- Timeline Lineal Interactivo -->
+        <div class="relative border-l border-brand-accent/60 max-w-3xl mx-auto pl-8 sm:pl-12 space-y-12">
+            
+            <!-- Step 1 -->
+            <div class="relative group">
+                <!-- Círculo indicador -->
+                <div class="absolute -left-[41px] sm:-left-[57px] top-1 w-6 h-6 rounded-full bg-brand-bg border-4 border-brand-secondary group-hover:bg-brand-secondary transition-all-300"></div>
+                
+                <span class="text-xs font-bold uppercase tracking-wider text-brand-secondary">Step 01 — Origin</span>
+                <h3 class="font-serif text-xl font-bold text-brand-primary mt-1">High-Altitude Hand-Picking</h3>
+                <p class="text-sm text-brand-text/70 mt-2 max-w-xl leading-relaxed">
+                    Sourced from premium plots in Ancash & La Libertad valleys at altitudes up to 2,500 meters, ensuring slow ripening and high concentration of health-preventive antioxidants.
+                </p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="relative group">
+                <div class="absolute -left-[41px] sm:-left-[57px] top-1 w-6 h-6 rounded-full bg-brand-bg border-4 border-brand-secondary group-hover:bg-brand-secondary transition-all-300"></div>
+                
+                <span class="text-xs font-bold uppercase tracking-wider text-brand-secondary">Step 02 — Processing</span>
+                <h3 class="font-serif text-xl font-bold text-brand-primary mt-1">Zero-Sugar Gentle Dehydration</h3>
+                <p class="text-sm text-brand-text/70 mt-2 max-w-xl leading-relaxed">
+                    Water is extracted at controlled low temperatures without artificial preservatives. The natural juices concentrate organically inside each berry, maintaining the essential Nutri-Grade A status.
+                </p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="relative group">
+                <div class="absolute -left-[41px] sm:-left-[57px] top-1 w-6 h-6 rounded-full bg-brand-bg border-4 border-brand-secondary group-hover:bg-brand-secondary transition-all-300"></div>
+                
+                <span class="text-xs font-bold uppercase tracking-wider text-brand-secondary">Step 03 — Packaging</span>
+                <h3 class="font-serif text-xl font-bold text-brand-primary mt-1">Modified Atmosphere & Kraft Doypack</h3>
+                <p class="text-sm text-brand-text/70 mt-2 max-w-xl leading-relaxed">
+                    Packed under a Modified Atmosphere (MAP) to prevent oxidation. We use biodegradable kraft paper pouches to adhere strictly to global green targets.
+                </p>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="relative group">
+                <div class="absolute -left-[41px] sm:-left-[57px] top-1 w-6 h-6 rounded-full bg-brand-bg border-4 border-brand-secondary group-hover:bg-brand-secondary transition-all-300"></div>
+                
+                <span class="text-xs font-bold uppercase tracking-wider text-brand-secondary">Step 04 — Logistics</span>
+                <h3 class="font-serif text-xl font-bold text-brand-primary mt-1">Reefer Container Cold Chain (12°C - 15°C)</h3>
+                <p class="text-sm text-brand-text/70 mt-2 max-w-xl leading-relaxed">
+                    Shipped securely across the ocean inside modern, temperature-controlled reefer containers. Consistent humidity and a tight 12°C to 15°C range prevent nutrient loss.
+                </p>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="relative group">
+                <div class="absolute -left-[41px] sm:-left-[57px] top-1 w-6 h-6 rounded-full bg-brand-bg border-4 border-brand-secondary group-hover:bg-brand-secondary transition-all-300"></div>
+                
+                <span class="text-xs font-bold uppercase tracking-wider text-brand-secondary">Step 05 — Retail</span>
+                <h3 class="font-serif text-xl font-bold text-brand-primary mt-1">Singapore Delivery & Cold Storage</h3>
+                <p class="text-sm text-brand-text/70 mt-2 max-w-xl leading-relaxed">
+                    Direct distribution to high-end Cold Storage locations, organic stores, and CBD office pantries across Singapore, delivered fresh and ready for busy urbanites.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Portal B2B / B2C Quick Portal -->
+    <section id="portal" class="bg-brand-accent/20 border-t border-brand-accent/40 py-20 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- B2C Segment -->
+                <div class="bg-brand-bg border border-brand-accent rounded-3xl p-8 sm:p-12 flex flex-col justify-between shadow-sm">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-brand-secondary">Direct Consumer</span>
+                        <h3 class="font-serif text-3xl font-bold text-brand-primary mt-2 mb-4">Elevate Your Daily Nutrition</h3>
+                        <p class="text-sm sm:text-base text-brand-text/80 leading-relaxed mb-6">
+                            Grab your trial bag of Natural.pe dried blueberries. The perfect clean ingredient for sugar-free yogurts, morning oatmeal, or as a powerful energy-boosting snack at your work desk.
+                        </p>
+                        <ul class="space-y-2 mb-8 text-sm text-brand-text/70">
+                            <li class="flex items-center gap-2">✔️ Resealable biodegradable pouch</li>
+                            <li class="flex items-center gap-2">✔️ High-purity antioxidants</li>
+                            <li class="flex items-center gap-2">✔️ No preservatives or added sulfites</li>
+                        </ul>
+                    </div>
+                    <button class="w-full bg-brand-primary hover:bg-opacity-95 text-white font-bold tracking-wider uppercase py-4 rounded transition-all-300">
+                        Shop Now on RedMart / LazMall
+                    </button>
+                </div>
+
+                <!-- B2B Segment (Distributors / Offices) -->
+                <div class="bg-brand-primary text-brand-bg rounded-3xl p-8 sm:p-12 flex flex-col justify-between shadow-xl">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-brand-secondary">B2B Partners & Office Wellness</span>
+                        <h3 class="font-serif text-3xl font-bold text-white mt-2 mb-4">Distribute a Top-Tier Brand</h3>
+                        <p class="text-sm sm:text-base text-brand-bg/85 leading-relaxed mb-6">
+                            Equip your premium shelves or corporate office pantries in Singapore with premium dried superfoods. Request technical sheets, customs pricing, and free physical samples.
+                        </p>
+                        <ul class="space-y-2 mb-8 text-sm text-brand-bg/75">
+                            <li class="flex items-center gap-2">📦 Pallet-level logistics optimized for SG cold chains</li>
+                            <li class="flex items-center gap-2">📄 Full certificates of analysis & phytosanitary documents</li>
+                            <li class="flex items-center gap-2">🌱 Eco-friendly, biodegradable corporate gift options</li>
+                        </ul>
+                    </div>
+                    <button class="w-full bg-brand-secondary hover:bg-brand-secondaryHover text-white font-bold tracking-wider uppercase py-4 rounded transition-all-300">
+                        Request Bulk Catalog & Samples
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-primary text-brand-bg/60 py-12 px-6 md:px-12 border-t border-brand-accent/20">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <div>
+                <a href="#" class="font-serif text-2xl font-bold text-white tracking-tight">
+                    natural<span class="text-brand-secondary">.pe</span>
+                </a>
+                <p class="text-xs mt-2 text-brand-bg/55">Bringing the pure power of Peruvian Andes directly to Singapore's tables.</p>
+            </div>
+            
+            <div class="flex flex-wrap justify-center gap-8 text-xs font-semibold tracking-wider uppercase">
+                <a href="#benefits" class="hover:text-white transition-colors">Benefits</a>
+                <a href="#certifications" class="hover:text-white transition-colors">Certifications</a>
+                <a href="#journey" class="hover:text-white transition-colors">The Journey</a>
+                <a href="#portal" class="hover:text-white transition-colors">B2B</a>
+            </div>
+
+            <p class="text-xs text-brand-bg/40">
+                &copy; 2026 Natural.pe. All rights reserved. Made in Peru, sourced for Singapore.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
